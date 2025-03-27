@@ -5,6 +5,10 @@ install-dev:
 	pip install -e ".[dev]"
 	python -m ipykernel install --user --name=pyttr
 
+install-test:
+	pip install -e ".[test]"
+	python -m ipykernel install --user --name=pyttr
+
 venv:
 	python3 -m venv venv
 

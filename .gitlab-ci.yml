@@ -36,6 +36,7 @@ test-py3.6:
     script:
         - pip install -U pip setuptools wheel setuptools_scm
         - hash -r
+        - make install-test
         - make test
     <<: *junit_definition
     allow_failure: true
