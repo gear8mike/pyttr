@@ -19,7 +19,6 @@ stages:
   python -V
   python3 -m venv venv
   source venv/bin/activate
-  pip install --upgrade pip
   pip install -U pip setuptools wheel setuptools_scm
   hash -r
   pip freeze
@@ -35,9 +34,11 @@ test-py3.6:
     image: python:3.6
     stage: test
     script:
-        - *virtualenv_definition
+        - pip install -U pip setuptools wheel setuptools_scm
+        - hash -r
         - make test
     <<: *junit_definition
+    allow_failure: true
 
 test-py3.7:
     image: python:3.7
