@@ -19,6 +19,7 @@ stages:
   python -V
   python3 -m venv venv
   source venv/bin/activate
+  pip install --upgrade pip
   pip install -U pip setuptools wheel setuptools_scm
   hash -r
   pip freeze
