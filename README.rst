@@ -7,8 +7,11 @@ Implementation of TTR algorithm with python
 .. image:: https://gitlab.rrz.uni-hamburg.de/neutrino/pyttr/badges/master/coverage.svg
     :target: https://neutrino.pages.km3net.de/pyttr/coverage
 
-.. image:: https://git.km3net.de/examples/km3badges/-/raw/master/docs-latest-brightgreen.svg
-    :target: https://neutrino.pages.km3net.de/pyttr
+.. image:: https://gitlab.rrz.uni-hamburg.de/neutrino/pyttr/-/badges/release.svg
+    :target: https://gitlab.rrz.uni-hamburg.de/neutrino/pyttr/-/releases
+
+.. .. image:: https://git.km3net.de/examples/km3badges/-/raw/master/docs-latest-brightgreen.svg
+..     :target: https://neutrino.pages.km3net.de/pyttr
 
 
 Installation
