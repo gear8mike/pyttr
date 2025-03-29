@@ -50,7 +50,7 @@ black-check:
 
 .PHONY: black-diff
 black-diff:
-	black --diff --color --exclude 'version.py' 
+	black --diff --color --exclude 'version.py' src/pyttr
 	black --diff --color examples
 	black --diff --color tests
 	black --diff --color doc/conf.py
