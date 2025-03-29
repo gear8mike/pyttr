@@ -30,17 +30,6 @@ stages:
       reports:
         junit: "reports/junit*.xml"
 
-test-py3.6:
-    image: python:3.6
-    stage: test
-    script:
-        - pip install -U pip setuptools wheel setuptools_scm
-        - hash -r
-        - make install-test
-        - make test
-    <<: *junit_definition
-    allow_failure: true
-
 test-py3.7:
     image: python:3.7
     stage: test
@@ -109,9 +98,8 @@ coverage:
         paths:
             - reports/coverage
 
-
 build-docs:
-    image: git.km3net.de:4567/common/dockerfiles/base/python:3.12
+    image: python:3.12
     stage: doc
     script:
         - *virtualenv_definition
@@ -119,7 +107,7 @@ build-docs:
     cache: {}
 
 pages:
-    image: git.km3net.de:4567/common/dockerfiles/base/python:3.12
+    image: python:3.12
     stage: doc
     script:
         - *virtualenv_definition
@@ -135,15 +123,15 @@ pages:
         - master
 
 
-pypi:
-    image: git.km3net.de:4567/common/dockerfiles/base/python:3.12
-    stage: release
-    cache: {}
-    script:
-        - pip install -U twine wheel setuptools_scm
-        - python setup.py sdist
-        - python setup.py bdist_wheel
-        - twine upload dist/*
-    only:
-        - tags
-    allow_failure: true
+# pypi:
+#     image: python:3.12
+#     stage: release
+#     cache: {}
+#     script:
+#         - pip install -U twine wheel setuptools_scm
+#         - python setup.py sdist
+#         - python setup.py bdist_wheel
+#         - twine upload dist/*
+#     only:
+#         - tags
+#     allow_failure: true

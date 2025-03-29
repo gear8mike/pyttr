@@ -20,7 +20,7 @@ Installation
 It is recommended to first create an isolated virtualenvironment to not interfere
 with other Python projects::
 
-  git clone https://gitlab.rrz.uni-hamburg.de/neutrino/pyttr
+  git clone https://gitlab.rrz.uni-hamburg.de/neutrino/pyttr.git
   cd pyttr
   python3 -m venv venv
   . venv/bin/activate
