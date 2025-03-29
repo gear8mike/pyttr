@@ -4,6 +4,7 @@ How to use the Calculator
 
 The following example shows how to use the `Calculator` class.
 """
+
 from pyttr import Calculator
 
 #####################################################

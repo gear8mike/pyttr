@@ -48,5 +48,12 @@ black-check:
 	black --check doc/conf.py
 	black --check setup.py
 
+.PHONY: black-diff
+black-diff:
+	black --diff --color --exclude 'version.py' src/pyttr
+	black --diff --color examples
+	black --diff --color tests
+	black --diff --color doc/conf.py
+	black --diff --color setup.py
 
 .PHONY: all clean install install-dev test  test-nocov flake8 pep8 docstyle black black-check
