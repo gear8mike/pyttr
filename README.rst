@@ -1,14 +1,17 @@
 Implementation of TTR algorithm with python
 ===========================================
 
-.. image:: https://gitlab.rrz.uni-hamburg.de/neutrino/pyttr/badges/master/pipeline.svg
-    :target: https://gitlab.rrz.uni-hamburg.de/neutrino/pyttr/pipelines
+.. image:: https://gitlab.rrz.uni-hamburg.de/neutrino/pyttr/badges/main/pipeline.svg
+    :target: https://gitlab.rrz.uni-hamburg.de/neutrino/pyttr/-/commits/main
 
-.. image:: https://gitlab.rrz.uni-hamburg.de/neutrino/pyttr/badges/master/coverage.svg
-    :target: https://neutrino.pages.km3net.de/pyttr/coverage
+.. image:: https://gitlab.rrz.uni-hamburg.de/neutrino/pyttr/badges/main/coverage.svg
+    :target: https://gitlab.rrz.uni-hamburg.de/neutrino/pyttr/-/commits/main
 
-.. image:: https://git.km3net.de/examples/km3badges/-/raw/master/docs-latest-brightgreen.svg
-    :target: https://neutrino.pages.km3net.de/pyttr
+.. image:: https://gitlab.rrz.uni-hamburg.de/neutrino/pyttr/-/badges/release.svg
+    :target: https://gitlab.rrz.uni-hamburg.de/neutrino/pyttr/-/releases
+
+.. .. image:: https://git.km3net.de/examples/km3badges/-/raw/master/docs-latest-brightgreen.svg
+..     :target: https://neutrino.pages.km3net.de/pyttr
 
 
 Installation
@@ -17,7 +20,7 @@ Installation
 It is recommended to first create an isolated virtualenvironment to not interfere
 with other Python projects::
 
-  git clone https://gitlab.rrz.uni-hamburg.de/neutrino/pyttr
+  git clone https://gitlab.rrz.uni-hamburg.de/neutrino/pyttr.git
   cd pyttr
   python3 -m venv venv
   . venv/bin/activate
