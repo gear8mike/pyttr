@@ -10,6 +10,7 @@ cache:
     - .cache/pip
 
 stages:
+  - code-style    
   - test
   - coverage
   - doc
@@ -78,9 +79,9 @@ test-py3.12:
         - make test
     <<: *junit_definition
 
-code-style:
+black:
     image: python:3.12
-    stage: test
+    stage: code-style
     script:
         - *virtualenv_definition
         - make black-diff
